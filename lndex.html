@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Game Boss Vote</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header .back-arrow {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #333;
+            cursor: pointer;
+        }
+        .header .title {
+            flex-grow: 1;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .vote-section {
+            padding: 15px;
+        }
+        .text-box {
+            background-color: #f7f9fc;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px;
+            border: 1px solid #e0e0e0;
+        }
+        .text-box p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #555;
+            margin: 0;
+        }
+        .vote-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #e0e0e0;
+        }
+        .vote-item .name {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333;
+        }
+        .vote-item .vote-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .vote-item .percentage {
+            font-size: 16px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .vote-item .vote-count {
+            font-size: 14px;
+            color: #666;
+            white-space: nowrap;
+        }
+        /* Mobile-first adjustments */
+        @media (max-width: 480px) {
+            .header .title {
+                font-size: 16px;
+            }
+            .vote-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+            }
+            .vote-item .vote-info {
+                align-self: flex-end;
+            }
+            .vote-item .name {
+                font-size: 15px;
+            }
+            .vote-item .percentage {
+                font-size: 15px;
+            }
+            .vote-item .vote-count {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="back-arrow">&lt;</span>
+        <div class="title">NEXT GAME BOSS VOTE</div>
+    </div>
+
+    <div class="text-box">
+        <p>ဘယ်မြို့က MLBB NEXT မှာ အကောင်းဆုံး ခေါင်းဆောင်လို့ သင်ထင်ပါသလဲ။</p>
+    </div>
+
+    <div class="vote-section">
+        <div class="vote-item">
+            <div class="name">FLYING CLOUD</div>
+            <div class="vote-info">
+                <span class="percentage">62%</span>
+                <span class="vote-count">14,877votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">EXPANDING RIVER</div>
+            <div class="vote-info">
+                <span class="percentage">16%</span>
+                <span class="vote-count">3,794votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">DANGEROUS CRASS</div>
+            <div class="vote-info">
+                <span class="percentage">12%</span>
+                <span class="vote-count">2,962votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">BROKEN WALLS</div>
+            <div class="vote-info">
+                <span class="percentage">10%</span>
+                <span class="vote-count">2,372votes</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-box">
+        <p>"တစ်နှစ်တာရဲ့ Game Boss ဘယ်သူ့ကို ဘယ်သူ့က ထိုက်တန်ပါသလဲ။ (NEXT Season ကို ဘယ်သူ့က တကယ်ကျွမ်းကျင်သွားပါသလဲ။ 3 ဦးအထိ ရွေးပါ။)"</p>
+    </div>
+
+    <div class="vote-section">
+      <div class="vote-item">
+            <div class="name">SUPERပလာတာ</div>
+            <div class="vote-info">
+                <span class="percentage">96%</span>
+                <span class="vote-count">47,789votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">ACE</div>
+            <div class="vote-info">
+                <span class="percentage">75%</span>
+                <span class="vote-count">18,030votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Ruby DD</div>
+            <div class="vote-info">
+                <span class="percentage">51%</span>
+                <span class="vote-count">12,218votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Dee</div>
+            <div class="vote-info">
+                <span class="percentage">42%</span>
+                <span class="vote-count">10,072votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Naomi</div>
+            <div class="vote-info">
+                <span class="percentage">9%</span>
+                <span class="vote-count">2,231votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Kenn</div>
+            <div class="vote-info">
+                <span class="percentage">6%</span>
+                <span class="vote-count">1,509votes</span>
+            </div>
+        </div>
+    
+        <div class="vote-item">
+            <div class="name">TOP Collection Gaming</div>
+            <div class="vote-info">
+                <span class="percentage">5%</span>
+                <span class="vote-count">1,207votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Gu Gu</div>
+            <div class="vote-info">
+                <span class="percentage">5%</span>
+                <span class="vote-count">1,097votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Daxx</div>
+            <div class="vote-info">
+                <span class="percentage">4%</span>
+                <span class="vote-count">1,009votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Kid</div>
+            <div class="vote-info">
+                <span class="percentage">3%</span>
+                <span class="vote-count">781votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Max</div>
+            <div class="vote-info">
+                <span class="percentage">3%</span>
+                <span class="vote-count">749votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">IngyiN RR</div>
+            <div class="vote-info">
+                <span class="percentage">3%</span>
+                <span class="vote-count">635votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Justin</div>
+            <div class="vote-info">
+                <span class="percentage">3%</span>
+                <span class="vote-count">634votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">May</div>
+            <div class="vote-info">
+                <span class="percentage">2%</span>
+                <span class="vote-count">539votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Niko</div>
+            <div class="vote-info">
+                <span class="percentage">2%</span>
+                <span class="vote-count">468votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Bo Ye</div>
+            <div class="vote-info">
+                <span class="percentage">2%</span>
+                <span class="vote-count">425votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Cake</div>
+            <div class="vote-info">
+                <span class="percentage">2%</span>
+                <span class="vote-count">400votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Der Der</div>
+            <div class="vote-info">
+                <span class="percentage">2%</span>
+                <span class="vote-count">383votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Monica - M</div>
+            <div class="vote-info">
+                <span class="percentage">1%</span>
+                <span class="vote-count">321votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Chill with Dee Dee</div>
+            <div class="vote-info">
+                <span class="percentage">1%</span>
+                <span class="vote-count">268votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">RAM</div>
+            <div class="vote-info">
+                <span class="percentage">1%</span>
+                <span class="vote-count">229votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Oh My Jennie</div>
+            <div class="vote-info">
+                <span class="percentage">1%</span>
+                <span class="vote-count">222votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Mayzonlizar</div>
+            <div class="vote-info">
+                <span class="percentage">1%</span>
+                <span class="vote-count">213votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Tnaing Htoo</div>
+            <div class="vote-info">
+                <span class="percentage">1%</span>
+                <span class="vote-count">192votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Khun</div>
+            <div class="vote-info">
+                <span class="percentage">1%</span>
+                <span class="vote-count">190votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">Dcross</div>
+            <div class="vote-info">
+                <span class="percentage">0%</span>
+                <span class="vote-count">109votes</span>
+            </div>
+        </div>
+        <div class="vote-item">
+            <div class="name">T-brock</div>
+            <div class="vote-info">
+                <span class="percentage">0%</span>
+                <span class="vote-count">100votes</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
